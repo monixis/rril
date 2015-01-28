@@ -1,0 +1,66 @@
+
+h2 {
+  font: 28px Helvetica, Verdana, sans-serif;
+  margin: 5px;
+  padding: 0;
+  color: #b31b1b;
+}
+
+#mainlist{
+	/*border: 1px solid #000000;*/
+	width:660px;
+	height:735px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+	z-index: 9;
+	position: relative;
+	float: right;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+td{
+	border-bottom: 1px solid #ccc;
+	height: 175px;
+}
+
+img.covers{
+	height: 160px;
+	width: 108px;
+	border: 1px solid #000000;
+}
+
+
+/* redundant?
+ */
+.emp{
+  font: 18px Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  width: 400px;
+  padding: 5px;
+  height: 220px;
+}
+ 
+.emp:last-child {
+  border: none;
+}
+ 
+.emp a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 400px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+.emp a:hover {
+  font-size: 25px;
+  background: #f6f6f6;
+}
+
+

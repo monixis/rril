@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'db-1.archive.library.marist.edu';
-$db['default']['username'] = 'rrildb_user';
-$db['default']['password'] = 'cBq8hMBkGv';
-$db['default']['database'] = 'rrildb';
+$db['default']['username'] = 'kgsj4';
+$db['default']['password'] = '$apr1$uWKUbEf9$MRAAHF2bK2XSbRvoK9GCg1';
+$db['default']['database'] = 'rril';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

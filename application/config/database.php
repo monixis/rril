@@ -48,14 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'sqlite:'.APPPATH.'db/rrildb.s3db';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'pdo';
+$db['default']['hostname'] = 'db-1.archive.library.marist.edu';
+$db['default']['username'] = 'kgsj4';
+$db['default']['password'] = '$apr1$uWKUbEf9$MRAAHF2bK2XSbRvoK9GCg1';
+$db['default']['database'] = 'rril';
+$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
+$db['default']['db_debug'] = FALSE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';

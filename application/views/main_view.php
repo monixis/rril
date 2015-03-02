@@ -29,8 +29,8 @@
 					}
 					?>
 					</table>	
-					<!--</ol>
-			     </div>
+					<!--/ol>
+			     <!--/div>
          </div>
 	</body>
 </html-->

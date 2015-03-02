@@ -35,7 +35,7 @@
 					<?php foreach($result as $row){
 					$imgtitle = $row -> title;
 					$imgisbn = $row -> isbn;
-					$imgurl = $row -> coverlink;
+					$imgurl = "http://syndetics.com/index.aspx?isbn=". $imgisbn ."/MC.GIF&client=maristcolib";
 					$imgsubtitle = $row -> subtitle;
 					$imgauthor = $row -> author;
 					$imgpublishername = $row -> publishername;
@@ -63,6 +63,7 @@
 						<p class="viewdetails"><strong>Overall MC: </strong><?php echo $imgmaristcoeff; ?></p>
 						<p class="viewdetails" style="margin-left: 25px;"><strong>Popular Score: </strong><?php echo $imgsalesmc; ?></p>
 						<p class="viewdetails" style="margin-left: 25px;"><strong>Scholarly Score: </strong><?php echo $imgcitationmc; ?></p>
+						
 					</div>
 				
 

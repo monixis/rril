@@ -139,11 +139,11 @@
 				}	
 				
 				if (gtype == 1){
-					$qry = $qry + "%20GROUP%20BY%20books.bid%20ORDER%20BY%20books.title%20ASC";
+					$qry = $qry + "%20ORDER%20BY%20books.title%20ASC";
 				} else if (gtype == 2){
-					$qry = $qry + "%20GROUP%20BY%20books.bid%20ORDER%20BY%20books.author%20ASC";
+					$qry = $qry + "%20ORDER%20BY%20books.author%20ASC";
 				} else if (gtype == 3){
-					$qry = $qry + "%20GROUP%20BY%20books.bid%20ORDER%20BY%20scores.maristcoeff%20DESC";
+					$qry = $qry + "%20ORDER%20BY%20scores.maristcoeff%20DESC";
 				}
 				
 				$url = $url + $qry;

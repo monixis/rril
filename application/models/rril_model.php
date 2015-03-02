@@ -16,10 +16,10 @@ class rril_model extends CI_Model {
 	function getbooks($cid) {
 
 		if ($cid == 0) {
-			$sql = "SELECT DISTINCT isbn.isbn, books.title, books.author, books.publishername, books.coverlink, books.publishedyear, scores.maristcoeff as 'weightedaverage' FROM scores INNER JOIN isbn ON booksISBN.iid = isbn.iid INNER JOIN booksISBN ON books.bid = booksISBN.bid INNER JOIN books ON booksScores.bid = books.bid ORDER BY scores.maristcoeff DESC LIMIT 200";
+			$sql = "SELECT DISTINCT isbn.isbn, books.title, books.author, books.publishername, books.coverlink, books.publishedyear, scores.maristcoeff as 'weightedaverage' FROM scores INNER JOIN isbn ON scores.iid = isbn.iid INNER JOIN booksISBN ON isbn.iid = booksISBN.iid INNER JOIN books ON booksISBN.bid = books.bid ORDER BY scores.maristcoeff DESC LIMIT 200";
 			$results = $this -> db -> query($sql);
 		} else {
-			$sql = "SELECT DISTINCT isbn.isbn, books.title, books.author, books.publishername, books.coverlink, books.publishedyear, scores.maristcoeff as 'weightedaverage' FROM scores INNER JOIN isbn ON booksISBN.iid = isbn.iid INNER JOIN booksISBN ON books.bid = booksISBN.bid INNER JOIN books ON booksScores.bid = books.bid WHERE books.category = ? ORDER BY scores.maristcoeff DESC LIMIT 200";
+			$sql = "SELECT DISTINCT isbn.isbn, books.title, books.author, books.publishername, books.coverlink, books.publishedyear, scores.maristcoeff as 'weightedaverage' FROM scores INNER JOIN isbn ON scores.iid = isbn.iid INNER JOIN booksISBN ON isbn.iid = booksISBN.iid INNER JOIN books ON booksISBN.bid = books.bid INNER JOIN booksCategory ON books.bid = booksCategory.bid INNER JOIN categories ON booksCategory.cid = categories.cid WHERE books.category = ? ORDER BY scores.maristcoeff DESC LIMIT 200";
 			$results = $this -> db -> query($sql, array($cid));
 		}
 
